@@ -11,9 +11,9 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.job.StatementCost">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job.StatementCost">
 
-    <Label layoutX="250" layoutY="20" text="Monthly and Yearly Cost Statement" />
+    <Label layoutX="306.0" layoutY="23.0" text="Monthly and Yearly Cost Statement" />
 
     <Label layoutX="30" layoutY="70" text="Month" />
     <ComboBox fx:id="monthComboBox" layoutX="150" layoutY="70" prefWidth="200" />
@@ -30,7 +30,7 @@
     <Button fx:id="addCostButton" layoutX="288.0" layoutY="201.0" onAction="#handleAddCostStatement" prefWidth="150" text="Add Cost Statement" />
 
     <Label layoutX="78.0" layoutY="243.0" text="Monthly and Yearly Cost Data" />
-    <TableView fx:id="costTableView" layoutX="78.0" layoutY="263.0" prefHeight="150" prefWidth="544.0">
+    <TableView fx:id="costTableView" layoutX="128.0" layoutY="260.0" prefHeight="150" prefWidth="544.0">
         <columns>
             <TableColumn fx:id="monthColumn" prefWidth="120" text="Month" />
             <TableColumn fx:id="yearColumn" prefWidth="120" text="Year" />
@@ -49,7 +49,8 @@
         </yAxis>
     </BarChart>
 
-    <Label fx:id="errorMessage" layoutX="30" layoutY="690" textFill="red" visible="false" />
+    <Label fx:id="errorMessage" layoutX="30" layoutY="690" prefHeight="17.0" prefWidth="713.0" textFill="red" visible="false" />
     <Label fx:id="confirmationMessage" layoutX="30" layoutY="710" textFill="green" visible="false" />
    <Button layoutX="337.0" layoutY="435.0" mnemonicParsing="false" onAction="#barChartOA" text="Show Bar Chart" />
+   <Button layoutX="506.0" layoutY="201.0" mnemonicParsing="false" onAction="#viewOA" prefHeight="25.0" prefWidth="127.0" text="View" />
 </AnchorPane>

@@ -2,13 +2,14 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="478.0" prefWidth="786.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.job.MonitorPaymentStatusController">
+<AnchorPane prefHeight="478.0" prefWidth="786.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job.MonitorPaymentStatusController">
 
     <Label layoutX="301.0" layoutY="23.0" text="Monitor Payment Status" />
 
@@ -32,4 +33,7 @@
             <TableColumn fx:id="paymentDateColumn" prefWidth="200" text="Date" />
         </columns>
     </TableView>
+   <DatePicker fx:id="datepicker" layoutX="552.0" layoutY="58.0" />
+   <Label layoutX="470.0" layoutY="62.0" text="Date" />
+   <Button layoutX="490.0" layoutY="199.0" mnemonicParsing="false" onAction="#viewRecordOA" prefHeight="25.0" prefWidth="150.0" text="View" />
 </AnchorPane>

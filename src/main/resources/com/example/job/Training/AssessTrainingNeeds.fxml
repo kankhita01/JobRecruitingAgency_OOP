@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job.TrainingCoordinator.AssessTrainingNeeds">
+
+    <Label layoutX="20.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Assessing Training Needs" />
+
+    <Label layoutX="20.0" layoutY="60.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Employee Skill Gaps" />
+
+    <TableView fx:id="employeeSkillGapTable" layoutX="20.0" layoutY="100.0" prefHeight="250.0" prefWidth="760.0">
+        <columns>
+            <TableColumn fx:id="employeeNameColumn" prefWidth="200.0" text="Employee Name" />
+            <TableColumn fx:id="currentSkillsColumn" prefWidth="200.0" text="Current Skills" />
+            <TableColumn fx:id="skillGapColumn" prefWidth="200.0" text="Skill Gap" />
+            <TableColumn fx:id="trainingNeededColumn" prefWidth="150.0" text="Training Needed" />
+        </columns>
+    </TableView>
+
+    <Label layoutX="20.0" layoutY="380.0" style="-fx-font-size: 14px; -fx-font-weight: bold;" text="Enter Training Feedback" />
+
+    <Label layoutX="20.0" layoutY="420.0" style="-fx-font-size: 14px;" text="Select Employee" />
+    <ComboBox fx:id="employeeComboBox" layoutX="160.0" layoutY="420.0" prefWidth="300.0" />
+
+    <Label layoutX="20.0" layoutY="460.0" style="-fx-font-size: 14px;" text="Enter Skill Gap" />
+    <TextField fx:id="skillGapField" layoutX="160.0" layoutY="460.0" prefWidth="300.0" promptText="Enter skill gap description" />
+
+    <Label layoutX="20.0" layoutY="500.0" style="-fx-font-size: 14px;" text="Recommended Training" />
+    <TextField fx:id="trainingRecommendationField" layoutX="179.0" layoutY="498.0" prefWidth="300.0" promptText="Enter recommended training" />
+
+    <Button layoutX="20.0" layoutY="540.0" onAction="#submitFeedback" style="-fx-font-size: 14px; -fx-padding: 10px;" text="Submit Feedback" />
+
+    <Label fx:id="statusLabel" layoutX="20.0" layoutY="570.0" style="-fx-font-size: 14px; -fx-text-fill: green;" />
+
+</AnchorPane>

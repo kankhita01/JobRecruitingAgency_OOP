@@ -10,7 +10,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="566.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job.AgencyDirector.ArrangeMeeting">
+<AnchorPane prefHeight="566.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job.ArrangeMeetingController">
 
     <Label layoutX="355.0" layoutY="22.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Arrange Meeting" />
 
@@ -45,6 +45,6 @@
         </columns>
     </TableView>
 
-    <Label fx:id="statusLabel" layoutX="106.0" layoutY="542.0" prefHeight="20.0" prefWidth="443.0" style="-fx-font-size: 14px; -fx-text-fill: green;" />
+    <Label fx:id="statusLabel" layoutX="20.0" layoutY="520.0" style="-fx-font-size: 14px; -fx-text-fill: green;" />
 
 </AnchorPane>

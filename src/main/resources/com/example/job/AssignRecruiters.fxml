@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="526.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job.AgencyDirector.AssignRecruiters">
+<AnchorPane prefHeight="526.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job.AssignRecruitersController">
 
     <Label layoutX="20.0" layoutY="20.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Assign Recruiters to Job Openings" />
 
@@ -18,13 +18,13 @@
     <ComboBox fx:id="recruiterComboBox" layoutX="20.0" layoutY="140.0" prefWidth="300.0" />
 
     <Label layoutX="350.0" layoutY="60.0" style="-fx-font-size: 14px;" text="Job Title" />
-    <TextField fx:id="jobTitleField" editable="false" layoutX="350.0" layoutY="80.0" prefWidth="300.0" />
+    <TextField fx:id="jobTitleField" layoutX="350.0" layoutY="80.0" prefWidth="300.0" />
 
     <Label layoutX="350.0" layoutY="120.0" style="-fx-font-size: 14px;" text="Job Description" />
-    <TextArea fx:id="jobDescriptionArea" editable="false" layoutX="350.0" layoutY="140.0" prefHeight="100.0" prefWidth="300.0" />
+    <TextArea fx:id="jobDescriptionArea" layoutX="350.0" layoutY="140.0" prefHeight="100.0" prefWidth="300.0" />
 
     <Label layoutX="350.0" layoutY="260.0" style="-fx-font-size: 14px;" text="Job Status" />
-    <TextField fx:id="jobStatusField" editable="false" layoutX="350.0" layoutY="280.0" prefWidth="300.0" />
+    <TextField fx:id="jobStatusField" layoutX="350.0" layoutY="280.0" prefWidth="300.0" />
 
     <Button layoutX="303.0" layoutY="369.0" onAction="#confirmAssignment" style="-fx-font-size: 14px; -fx-padding: 10px;" text="Confirm Assignment" />
 
