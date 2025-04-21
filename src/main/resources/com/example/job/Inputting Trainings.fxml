@@ -6,7 +6,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="413.0" prefWidth="746.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.job.InputTrainings">
+<AnchorPane prefHeight="413.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.job.InputTrainings">
 
     <Label layoutX="334.0" layoutY="24.0" text="UpComing Trainings" />
 
@@ -28,7 +28,7 @@
     <Label layoutX="388.0" layoutY="178.0" text="Number of Participants" />
     <TextField fx:id="participantsField" layoutX="538.0" layoutY="174.0" prefWidth="200" promptText="Enter Number of Participants" />
 
-    <Button fx:id="saveTrainingButton" layoutX="300.0" layoutY="226.0" prefWidth="150" text="Save Training" />
+    <Button fx:id="saveTrainingButton" layoutX="300.0" layoutY="226.0" onAction="#saveTrainingButtonOA" prefWidth="150" text="Save Training" />
    <Label fx:id="errorMessage" layoutX="88.0" layoutY="304.0" prefHeight="17.0" prefWidth="636.0" />
 
 </AnchorPane>
